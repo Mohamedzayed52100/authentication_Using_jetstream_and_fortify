@@ -3,7 +3,7 @@
 **Created By :** Mohamed Ibrahim Zayed
 **Email :** mohamedzayed52100@gmail.com
 
-This is the main readme file for the project used in Laravel Jetstream & Fortify for authentication
+This is the main readme file for the project used in Laravel Jetstream & Fortify & telescope for authentication
 
 ## Installation
 

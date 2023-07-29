@@ -1,4 +1,4 @@
-## Laravel Jetstream & Fortify - The Complete Guide (Course Files)
+## Laravel Jetstream & Fortify & telescope - The Complete Guide
 
 **Created By :** Mohamed Ibrahim Zayed
 **Email :** mohamedzayed52100@gmail.com

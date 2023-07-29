@@ -1,20 +1,14 @@
 <?php
 
+use App\Events\NewEvent;
 use App\Models\User;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Http;
+use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Route;
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider and all of them will
-| be assigned to the "web" middleware group. Make something great!
-|
-*/
+
 
 Route::get('/', function () {
     return view('welcome');
@@ -53,4 +47,18 @@ Route::get('update'  , function(){
     DB::commit();
 
 
+});
+
+
+Route::get('/NewEvent' , function(){
+    NewEvent::dispatch();
+});
+
+Route::get('/http' , function(){
+    return Http::get('http://example.com/');
+});
+
+
+Route::get('/log' , function(){
+    return Log::error('this is message');
 });
